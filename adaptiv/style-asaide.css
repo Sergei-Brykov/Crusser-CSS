@@ -1,0 +1,101 @@
+.shipping-adres{
+  width: 28%;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 10px #90a0b9;
+}
+.adres-form{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.adres-form label{
+  font-size: 12px;
+  font-weight: 700;
+}
+.adres-form p{
+  font-size: 10px;
+  font-weight: 500;
+  width:80%;
+}
+.input-adres,
+.link,
+.input-text{
+  width: 100%;
+  height: 45px;
+  margin: 5px 0 14px 0;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  background: #ecf0f3;
+  border: 1px solid #f3dccf;
+}
+.wraper-input{
+  justify-content: space-between;
+}
+.link{
+  width: calc(50% - 7px);
+  background: white;
+  border: 1px solid #eae8fd;
+  padding: 0;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 15px 0 14px 0;
+}
+.link img{
+  margin-right: 10px;
+}
+.litle-input{
+  width: calc(50% - 7px);
+}
+input.phone{
+  margin: 5px 0 25px 0;
+}
+input[type="checkbox"]{
+  display: none;
+}
+label[chekc]{
+  font-weight: 300;
+  font-size: 11px;
+  font-weight: 500;
+  position: relative;
+  margin: 10px 0 0 20px;
+}
+label[chekc]::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid#32405b;
+}
+label[chekc]::after{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -19px;
+  width: 10px;
+  height: 8px;
+  background-image: url(./redcheck.png);
+  background-size: cover;
+  display: none;
+}
+input:checked + label[chekc]::after{
+  display: block;
+}
+hr{
+  margin: 15px 0;
+}
+button{
+  width: 100%;
+  height: 45px;
+  margin: 20px 0 0 0;
+  background: #32405b;
+  color: white;
+  font-weight: 700;
+}
+aside label{
+  width: 100%;
+}

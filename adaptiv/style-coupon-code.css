@@ -1,0 +1,20 @@
+.item-title{
+  margin: 35px 0 5px 0;
+  font-weight: 900;
+}
+.coupon-conteiner{
+  justify-content: space-between;
+}
+.coupon-input{
+  border: none;
+  height: 40px;
+  width: 70%;
+}
+.appty-discount{
+  height: 38px;
+  width: 28%;
+  background: #cbd3e2;
+  color: white;
+  font-weight: 700;
+  margin: 5px 0 14px 0;
+}

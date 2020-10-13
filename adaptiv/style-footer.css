@@ -1,0 +1,12 @@
+footer{
+  width: 100%;
+  background: #ecf0f3;
+  font-size: 12px;
+}
+.menu-footer{
+  font-weight: 700;
+  width: 35%;
+  
+  justify-content: space-between;
+  
+}

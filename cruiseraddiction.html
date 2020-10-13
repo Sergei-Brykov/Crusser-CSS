@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cruiseraddiction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./adaptiv/style-cruiseraddiction.css">
+  <link rel="stylesheet" href="./adaptiv/style-header.css">
+  <link rel="stylesheet" href="./adaptiv/style-menu.css">
+  <link rel="stylesheet" href="./adaptiv/style-main.css">
+  <link rel="stylesheet" href="./adaptiv/style-asaide.css">
+  <link rel="stylesheet" href="./adaptiv/style-order-summary.css">
+  <link rel="stylesheet" href="./adaptiv/style-coupon-code.css">
+  <link rel="stylesheet" href="./adaptiv/style-shipping-methods.css">
+  <link rel="stylesheet" href="./adaptiv/style-footer.css">
+</head>
+<body class="flex-center">
+  <input type="checkbox" id="menu" main>
+  <label for="menu">
+    <div class="fon">
+
+    </div>
+  </label>
+  <header class="flex-center">
+    <div class="conteiner header flex-center">
+      <label for="menu">
+        <div class="header-menu pointer flex-center">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </label>
+      <h1 class="pointer">
+        <span>Cruiser</span>Addiction
+      </h1>
+      <div class="user-menu flex-center">
+        
+        <input type="search" placeholder="Search by Part Number" value="">
+        <div class="i-image flex-center pointer"></div>
+        <div class="line"></div>
+        <div class="search-image pointer">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOC42ODAzIDE4LjY5MDNDMTguMjU0OCAxOS4xMDIzIDE3LjU2NTEgMTkuMTAyMyAxNy4xMzk2IDE4LjY5MDNMMTIuNzE1NCAxNC40MDU3QzExLjQxMTYgMTUuMjY1MSA5LjgzNjg3IDE1Ljc2NzYgOC4xNDA3NiAxNS43Njc2QzMuNjQ0NzYgMTUuNzY3NiAwIDEyLjIzNzkgMCA3Ljg4Mzc3QzAgMy41Mjk2NCAzLjY0NDc2IC04LjAxMDg2ZS0wNSA4LjE0MDc2IC04LjAxMDg2ZS0wNUMxMi42MzY4IC04LjAxMDg2ZS0wNSAxNi4yODE1IDMuNTI5NjQgMTYuMjgxNSA3Ljg4Mzc3QzE2LjI4MTUgOS44MzM1OSAxNS41NTAxIDExLjYxNzggMTQuMzM5MiAxMi45OTQyTDE4LjY4MDMgMTcuMTk4MkMxOS4xMDU3IDE3LjYxMDMgMTkuMTA1NyAxOC4yNzgyIDE4LjY4MDMgMTguNjkwM1pNOC4xNDA3NiAyLjAzMzFDNC44MDQzMyAyLjAzMzEgMi4wOTk2IDQuNjUyNTkgMi4wOTk2IDcuODgzNzdDMi4wOTk2IDExLjExNDkgNC44MDQzMyAxMy43MzQzIDguMTQwNzYgMTMuNzM0M0MxMS40NzcyIDEzLjczNDMgMTQuMTgxOSAxMS4xMTQ5IDE0LjE4MTkgNy44ODM3N0MxNC4xODE5IDQuNjUyNTkgMTEuNDc3MiAyLjAzMzEgOC4xNDA3NiAyLjAzMzFaIiBmaWxsPSIjQ0E0NjM1Ii8+Cjwvc3ZnPgo=" 
+          width="100%" height="100%" alt="search-image">
+        </div>
+        
+        <div class="user-currency-menu flex-center">
+          <div class="currency-menu-item pointer">ENG</div>
+          <div class="line"></div>
+          <div class="currency-menu-item pointer">USD</div>
+          <div></div>
+        </div>
+        <div class="basket flex-center pointer">
+          <div class="circle flex-center">
+            0
+          </div>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAYAAADk3wSdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG0SURBVHgB5VW7TsMwFD1OGdjohjqREQkJQn+g5gtoN1oqoY5MhS+gTIztJ8BSkBgoX1B/AXURO2GCMSyIJTHHbSpSNYi+mDiSZce+Pvf62Pcmk5eHzzl321t3t97f/CcfS4ATQdQAkXWQ6VoHniwXsSDEaODJA1cgcydg9INq17AAnNFAqxsfiPpYAlYmp4TMy0ojAnw6YYM/dLgAqRkSF6jLEeVw7Re1tvOa0vhcY8NLhFADYaDVrZ4IK/mxK8uXAsIkNfVkxaNKJDeuw2YgdjhN/eEmArHEgRj0pp9y/HFo1bYbdNpa7DBLIi92KBnUya+kUzi0UEMnVZKaroM/wD8nTXv8RabsFQaPfzYwwrp9XimPX8AWF8wBw+QwCPcmSAWiToSPU2A1ixkxSueV9MVOwC7AnBgj5dEVM6I5n6afQRzMeO5b5GW1Rfo65oJpsG6ci7Qllr4Wo96n8CVbCnmrTWpdClnAk3asYg12haRdlHZRMTaYw/e9uJiw9J2F+L6IhPM1dmN29tf0A6nTtxJwE40Hpc5WIj2tXSaN8tV/VDl3J8fhBWXYZNTHPXWtprX7ArW2uB/B8pzkAAAAAElFTkSuQmCC"
+          width="50%" height="50%" alt="basket">
+        </div>
+        <div class="user-cabinet flex-center pointer">
+          <img src="./adaptiv/user.svg" alt="user-cabinet">
+        </div>
+      </div>
+      
+      
+    </div>
+  </header>
+  <div class="main-menu">
+    <div class="conteiner menu-header flex-center">
+      <div>FAQ</div>
+      <div>CONTACTS</div>
+      <div>ABOUTUS</div>
+      <div>NEWS</div>
+      <div>BRANDS</div>
+      <div>CARS</div>
+    </div>
+  </div>
+  <div class="main-menu-mob">
+    <div class="flex-center">
+      <div>FAQ</div>
+      <div>CONTACTS</div>
+      <div>ABOUTUS</div>
+      <div>NEWS</div>
+      <div>BRANDS</div>
+      <div>CARS</div>
+    </div>
+  </div>
+  <div class="conteiner mob">
+    <div class="user-menu flex-center user-menu-mobail">
+      <input type="search" placeholder="Search by Part Number" value="">
+      <div class="i-image flex-center pointer"></div>
+      <div class="line"></div>
+      <div class="search-image pointer">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOC42ODAzIDE4LjY5MDNDMTguMjU0OCAxOS4xMDIzIDE3LjU2NTEgMTkuMTAyMyAxNy4xMzk2IDE4LjY5MDNMMTIuNzE1NCAxNC40MDU3QzExLjQxMTYgMTUuMjY1MSA5LjgzNjg3IDE1Ljc2NzYgOC4xNDA3NiAxNS43Njc2QzMuNjQ0NzYgMTUuNzY3NiAwIDEyLjIzNzkgMCA3Ljg4Mzc3QzAgMy41Mjk2NCAzLjY0NDc2IC04LjAxMDg2ZS0wNSA4LjE0MDc2IC04LjAxMDg2ZS0wNUMxMi42MzY4IC04LjAxMDg2ZS0wNSAxNi4yODE1IDMuNTI5NjQgMTYuMjgxNSA3Ljg4Mzc3QzE2LjI4MTUgOS44MzM1OSAxNS41NTAxIDExLjYxNzggMTQuMzM5MiAxMi45OTQyTDE4LjY4MDMgMTcuMTk4MkMxOS4xMDU3IDE3LjYxMDMgMTkuMTA1NyAxOC4yNzgyIDE4LjY4MDMgMTguNjkwM1pNOC4xNDA3NiAyLjAzMzFDNC44MDQzMyAyLjAzMzEgMi4wOTk2IDQuNjUyNTkgMi4wOTk2IDcuODgzNzdDMi4wOTk2IDExLjExNDkgNC44MDQzMyAxMy43MzQzIDguMTQwNzYgMTMuNzM0M0MxMS40NzcyIDEzLjczNDMgMTQuMTgxOSAxMS4xMTQ5IDE0LjE4MTkgNy44ODM3N0MxNC4xODE5IDQuNjUyNTkgMTEuNDc3MiAyLjAzMzEgOC4xNDA3NiAyLjAzMzFaIiBmaWxsPSIjQ0E0NjM1Ii8+Cjwvc3ZnPgo=" 
+        width="100%" height="100%" alt="search-image">
+      </div>
+    </div>
+  </div>
+  <main> 
+    <div class="conteiner flex-center main-conteiner "> 
+      
+
+
+
+      <div class="nav-title  flex-center">
+        <h3>Home / <span>Check Out</span> </h3>
+        <div class="shopping flex-center">
+          BLABLABLA SHOPING
+          <div class="red-sq"></div>
+        </div>
+      </div>
+      <div class="main flex-center">
+        <input type="checkbox" id="mob-adres">  
+        <aside class="shipping-adres flex-center">
+          
+          <label class="" for="mob-adres">
+            <div class="item-heading flex-center">
+              SHIPPING ADRES
+            </div>
+          </label>
+          <div class="adres-form">
+            <label for="email">Your Email<span>*</span> </label>
+            <br>
+            <input class="input-adres " type="email" id="email" placeholder="Chekc you email"/>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur  <span>adipisicing </span> elit. Quos.
+            </p>
+            <div class="wraper-input flex-center">
+              <div class="link pointer flex-center pointer">
+                <img src="./adaptiv/google.jpg" alt="google">
+                <h3>GOOGLE</h3>
+              </div>
+              <div class="link pointer flex-center pointer">
+                <img src="./adaptiv/facebook.jpg" alt="facebook">
+                FACEBOOK
+              </div>
+            </div>
+            <div class="wraper-input flex-center">
+              <div class="litle-input">
+                <label for="name">Fist Name<span>*</span> </label>
+                <br>
+                <input class="input-adres " type="text" id="name" placeholder="this is you requised"/>
+              </div>
+              <div class="litle-input">
+                <label for="lastName">Last Name<span>*</span> </label>
+                <br>
+                <input class="input-adres " type="text" id="lastName" placeholder="this is you requised"/> 
+              </div>
+              
+            </div>
+            <label for="street-adres">
+              Street Adres 1<span>*</span> 
+            </label>
+            <input class="input-adres " checked type="text" id="street-adres" 
+              placeholder="this is you requised"/>
+            <label for="street-adres2">
+              Street Adres 2<span>*</span> 
+            </label>
+            <input class="input-adres " type="text" id="street-adres2" 
+              placeholder="this is you requised"/>
+            <div class="wraper-input flex-center">
+              <div class="litle-input">
+                <label for="city">
+                  City<span>*</span> 
+                </label>
+                <br>
+                <input class="input-adres " type="email" id="city" placeholder="this is you requised"/>
+              </div>
+              <div class="litle-input">
+                <label for="state">State<span>*</span> </label>
+                <br>
+                <input class="input-adres " type="email" id="state" placeholder="Chekc you email"/> 
+              </div>
+
+            </div>
+            <div class="wraper-input flex-center">
+              <div class="litle-input">
+                <label for="zip">ZIP/Postal code<span>*</span> </label>
+                <br>
+                <input class="input-adres " type="email" id="zip" placeholder="Chekc you email"/>
+              </div>
+              <div class="litle-input">
+                <label for="country">Country<span>*</span> </label>
+                <br>
+                <input class="input-adres " type="email" id="country" placeholder="Chekc you email"/> 
+              </div>
+
+            </div>
+            <div class="phone-button"></div>
+            <div class="whats-up"></div>
+            
+            <label for="phone">PHONE<span>*</span> </label>
+            
+            <br>
+            <input class="input-adres phone" type="text" id="phone" placeholder="this is you requised"/>
+            <br>
+            <input type="checkbox" checked id="chekc1">
+            <label chekc for="chekc1"> 
+              Lorem ipsum dolor sit amet  
+            </label>
+            <hr>
+            <input type="checkbox" id="chekc2">
+            <label chekc for="chekc2"> 
+              Lorem ipsum  
+            </label>
+            <button>
+              SAVE
+            </button>
+          </div>
+         
+
+        </aside>
+        
+        <div class="methods-conteiner">
+          <div class="flex-center order-summary">
+            <div class="item-heading flex-center">
+              ORDER SUMMARY
+            </div>
+            <div class="summary-wraper flex-center">
+              <div class="summary_table-header  flex-center">
+                <div class="table-picture table-heading flex-center">PICTURE</div>
+                <div class="table-brand  table-heading flex-center">BRAND</div>
+                <div class="table-name table-heading flex-center">NAME</div>
+                <div class="table-price table-heading flex-center">PRICE</div>
+                <div class="table-quantitty table-heading flex-center">QUANTITY</div>
+                <div class="table-subtottal table-heading flex-center">SUBTOTAL</div>
+              </div>
+
+              <div class="product_table-item  flex-center">
+                <div class="table-picture item-picture  flex-center">
+                  1
+                  <img src="./adaptiv/item-picture.jpg" alt="item-picture">
+                </div>
+                <div class="table-brand  table-heading flex-center">TOYOTA</div>
+                <div class="table-name item-name table-heading flex-center">
+                  <div>
+                    ТУТ ИНФОРМАЦИЯ ПРО ТАЧКИ И ВСЯКИЕ ДВИЖУХИ 
+                  <br>
+                  serial numder is 
+                  <b>5626001545235</b>
+                  </div>
+                  
+                </div>
+                <div class="table-price table-heading flex-center">$125.00</div>
+                <div class="table-quantitty item-quantitty table-heading flex-center">
+                  <div class="flex-center">-</div>
+                  20
+                  <div  class="flex-center">+</div>
+                </div>
+                <div class="table-subtottal item-subtottal table-heading flex-center">
+                  <div>$2500.00</div>
+                  <div class="key-item flex-center">
+                    <img class="pointer" src="./adaptiv/key.png" alt="key" width="12px" height="12px">
+                    <img class="kross-image pointer" src="adaptiv/kross.jpg" alt="canceling" width="12px" height="12px">
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="product_table-item  flex-center">
+                <div class="table-picture item-picture  flex-center">
+                  2
+                  <img src="./adaptiv/item-picture.jpg" alt="item-picture">
+                </div>
+                <div class="table-brand  table-heading flex-center">TOYOTA</div>
+                <div class="table-name item-name table-heading flex-center">
+                  <div>
+                    ТУТ ИНФОРМАЦИЯ ПРО ТАЧКИ И ВСЯКИЕ ДВИЖУХИ 
+                  <br>
+                  serial numder is 
+                  <b>5626001545235</b>
+                  </div>
+                  
+                </div>
+                <div class="table-price table-heading flex-center">$125.00</div>
+                <div class="table-quantitty item-quantitty table-heading flex-center">
+                  <div class="flex-center">-</div>
+                  20
+                  <div  class="flex-center">+</div>
+                </div>
+                <div class="table-subtottal item-subtottal table-heading flex-center">
+                  <div>$2500.00</div>
+                  <div class="key-item flex-center">
+                    <img class="pointer"src="./adaptiv/key.png" alt="key" width="12px" height="12px">
+                    <img class="kross-image pointer" src="adaptiv/kross.jpg" alt="canceling" width="12px" height="12px">
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="product_table-item  flex-center">
+                <div class="table-picture item-picture  flex-center">
+                  3
+                  <img src="./adaptiv/item-picture.jpg" alt="item-picture">
+                </div>
+                <div class="table-brand  table-heading flex-center">TOYOTA</div>
+                <div class="table-name item-name table-heading flex-center">
+                  <div>
+                    ТУТ ИНФОРМАЦИЯ ПРО ТАЧКИ И ВСЯКИЕ ДВИЖУХИ 
+                  <br>
+                  serial numder is 
+                  <b>5626001545235</b>
+                  </div>
+                  
+                </div>
+                <div class="table-price table-heading flex-center">$125.00</div>
+                <div class="table-quantitty item-quantitty table-heading flex-center">
+                  <div class="flex-center">-</div>
+                  20
+                  <div  class="flex-center">+</div>
+                </div>
+                <div class="table-subtottal item-subtottal table-heading flex-center">
+                  <div>$2500.00</div>
+                  <div class="key-item flex-center">
+                    <div class="flex-center">
+                      <img class="pointer"src="./adaptiv/key2.png" alt="key" width="12px" height="12px">
+                    </div>
+                    <img class="kross-image pointer" src="./adaptiv/kross.jpg" alt="canceling" width="12px" height="12px">
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="product_table-item  flex-center">
+                <div class="table-picture item-picture  flex-center">
+                  4
+                  <img src="./adaptiv/item-picture.jpg" alt="item-picture">
+                </div>
+                <div class="table-brand  table-heading flex-center">TOYOTA</div>
+                <div class="table-name item-name table-heading flex-center">
+                  <div>
+                    ТУТ ИНФОРМАЦИЯ ПРО ТАЧКИ И ВСЯКИЕ ДВИЖУХИ 
+                  <br>
+                  serial numder is 
+                  <b>5626001545235</b>
+                  </div>
+                  
+                </div>
+                <div class="table-price table-heading flex-center">$125.00</div>
+                <div class="table-quantitty item-quantitty table-heading flex-center">
+                  <div class="flex-center">-</div>
+                  20
+                  <div  class="flex-center">+</div>
+                </div>
+                <div class="table-subtottal item-subtottal table-heading flex-center">
+                  <div>$2500.00</div>
+                  <div class="key-item flex-center">
+                    <img class="pointer"src="./adaptiv/key.png" alt="key" width="12px" height="12px">
+                    <img class="kross-image pointer" src="./adaptiv/kross.jpg" alt="canceling" width="12px" height="12px">
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="product_table-item  border-none flex-center">
+                <div class="table-picture item-picture  flex-center">
+                  5
+                  <img src="./adaptiv/item-picture.jpg" alt="item-picture">
+                </div>
+                <div class="table-brand  table-heading flex-center">TOYOTA</div>
+                <div class="table-name item-name table-heading flex-center">
+                  <div>
+                    ТУТ ИНФОРМАЦИЯ ПРО ТАЧКИ И ВСЯКИЕ ДВИЖУХИ 
+                  <br>
+                  serial numder is 
+                  <b>5626001545235</b>
+                  </div>
+                  
+                </div>
+                <div class="table-price table-heading flex-center">$125.00</div>
+                <div class="table-quantitty item-quantitty table-heading flex-center">
+                  <div class="flex-center">-</div>
+                  20
+                  <div  class="flex-center">+</div>
+                </div>
+                <div class="table-subtottal item-subtottal table-heading flex-center">
+                  <div>$2500.00</div>
+                  <div class="key-item flex-center">
+                    <img class="pointer" src="./adaptiv/key.png" alt="key" width="12px" height="12px">
+                    <img class="kross-image pointer" src="./adaptiv/kross.jpg" alt="canceling" width="12px" height="12px">
+                  </div>
+                  
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="total-price flex-center">
+            <div class="pcs flex-center">
+              25pcs
+            </div>
+            <div class="total-maney flex-center">
+              1024124.00$
+            </div>
+          </div>
+          <div class="item-title">
+            USE COUPON CODE
+          </div>
+          <div class="flex-center coupon-conteiner">
+            <input class="input-adres coupon-input" type="text" placeholder=" Enter your coupon code">
+            <div class='appty-discount flex-center pointer'>
+              APPTY DISCOUNT
+            </div>
+          </div>
+          <br>
+          <div class="shadow-wrap">
+            <div class="shipping-methods item-heading flex-center ">
+              <div>SHIPING METHODS</div>
+              <div class="shipping-methods-subheading"> 
+                <img src="./adaptiv/rocked.png" alt="rocet" width="12px" height="12px">
+                Faster /-------/ Shesper
+                <img src="./adaptiv/aple.png" alt="aple" width="12px" height="12px">
+              </div>
+            </div>
+            <div class="shipping-methods-conteiner flex-center">
+              <div class="shipping-methods-item flex-center">
+                <input type="radio"  id="radio-but1" name='method'>
+                <label class="radio" for="radio-but1">
+                  <div class="flex-center">
+                  </div>
+                </label>
+                <div class="flex-center">
+                  <img src="./adaptiv/method1.jpg" alt="method" width="75px" height="25px">
+                </div>
+                
+                <div class="flex-center">
+                  Standart
+                </div>
+                <div class="flex-center">
+                  Up to 7 days
+                </div>
+                <div class="flex-center">
+                  <span> 
+                    <b>$18.99</b> 
+                  </span> 
+                </div>
+  
+              </div>
+              <div class="shipping-methods-item flex-center">
+                <input type="radio"  checked id="radio-but2" name='method'>
+                <label class="radio" for="radio-but2">
+                  <div class="flex-center">
+                  </div>
+                </label>
+                <div class="flex-center">
+                  <img src="./adaptiv/method2.jpg" alt="method" width="75px" height="25px">
+                </div>
+                
+                <div class="flex-center">
+                  Standart
+                </div>
+                <div class="flex-center">
+                  Up to 7 days
+                </div>
+                <div class="flex-center">
+                  $18.99
+                </div>
+              </div>
+              <div class="shipping-methods-item flex-center">
+                <input type="radio" id="radio-but3" name='method'>
+                <label class="radio" for="radio-but3">
+                  <div class="flex-center">
+                  </div>
+                </label>
+                <div class="flex-center">
+                  <img class="img-colum" src="./adaptiv/method3.jpg" alt="method" width="40px" height="45px">
+                </div>
+                
+                <div class="flex-center">
+                  Standart
+                </div>
+                <div class="flex-center">
+                  Up to 7 days
+                </div>
+                <div class="flex-center">
+                  $18.99
+                </div>
+  
+                
+              </div>
+              <div class="shipping-methods-item flex-center">
+                <input type="radio" id="radio-but4" name='method'>
+                <label class="radio" for="radio-but4">
+                  <div class="flex-center">
+                  </div>
+                </label>
+                <div class="flex-center">
+                  <img src="./adaptiv/method1.jpg" alt="method" width="75px" height="25px">
+                </div>
+                
+                <div class="flex-center">
+                  Standart
+                </div>
+                <div class="flex-center">
+                  Up to 7 days
+                </div>
+                <div class="flex-center">
+                  $18.99
+                </div>
+  
+              </div>
+              <div class="shipping-methods-item flex-center">
+                <input type="radio" id="radio-but5" name='method'>
+                <label class="radio" for="radio-but5">
+                  <div class="flex-center">
+                  </div>
+                </label>
+                <div class="flex-center">
+                  <img src="./adaptiv/method2.jpg" alt="method" width="75px" height="25px">
+                </div>
+                
+                <div class="flex-center">
+                  Standart
+                </div>
+                <div class="flex-center">
+                  Up to 7 days
+                </div>
+                <div class="flex-center">
+                  $18.99
+                </div>
+              </div>
+              <div class="shipping-methods-item flex-center">
+                <input type="radio" id="radio-but6" name='method'>
+                <label class="radio" for="radio-but6">
+                  <div class="flex-center">
+                  </div>
+                </label>
+                <div class="flex-center">
+                  <img class="img-colum" src="./adaptiv/method3.jpg" alt="method" width="40px" height="45px">
+                </div>
+                
+                <div class="flex-center">
+                  Standart
+                </div>
+                <div class="flex-center">
+                  Up to 7 days
+                </div>
+                <div class="flex-center">
+                  $18.99
+                </div>
+              </div>
+  
+             
+              
+  
+            </div>
+          </div>
+         
+          <div class="total flex-center">
+            TOTAL: 
+            <span><b> $12415325</b> </span>
+          </div>
+          <br>
+          <div class="shadow-wrap">
+            <div class="shipping-methods item-heading flex-center ">
+              PAYMENTS METHODS
+            </div>
+            <div class="pay-methods-conteiner flex-center">
+              <div class="item-pay-methods flex-center">
+       
+                <input type="radio" checked id="radio-but7" name='pay-method'>
+                <label class="radio " for="radio-but7">
+                  <div class="flex-center paybutton">
+                  </div>
+                </label>
+                <div class="pay-item-conteiner flex-center">
+                  <img src="./adaptiv/paypal.jpg" alt="PayPal" > 
+                  PayPal Lorem ipsum dolor sit.
+                </div>
+                
+              </div>
+              <div class="item-pay-methods flex-center">
+                
+                <input type="radio" id="radio-but8" name='pay-method'>
+                <label class="radio " for="radio-but8">
+                  <div class="flex-center paybutton">
+                  </div>
+                </label>
+                <div class="pay-item-conteiner flex-center">
+                  <img src="./adaptiv/visa.jpg" alt="visa" style="margin:3px"> 
+                  <img src="./adaptiv/visa2.jpg" alt="visa"> 
+                  PayPal Lorem ipsum dolor sit.
+                </div>
+              </div>
+                
+            </div>
+            
+          </div>
+          <div  class="item-title">
+            ORDER NOTE
+          </div> 
+          
+          <textarea class="input-text"  placeholder="lorem dollar maney"></textarea>
+          <hr>
+
+          <input type="checkbox" id="chekc3">
+          <label chekc for="chekc3"> 
+            Lorem ipsum dolor sit amet  
+          </label>
+          <br><br>
+          <input type="checkbox" id="chekc4">
+          <label chekc for="chekc4"> 
+            Lorem ipsum  
+          </label>
+          <button class="redbutton">
+            PLACE ORDER
+          </button>
+        </div>
+        
+      </div>
+    </div>
+    <div class="nav-title  flex-center">
+
+      <div class="shopping footer flex-center">
+        <img src="./adaptiv/send.png" alt="">
+        Leave a Message
+        
+      </div>
+    </div>
+  </main>
+  <footer class="flex-center">
+    <div class="conteiner header flex-center">
+      <h1 class="pointer">
+        <span>Cruiser</span>Addiction
+      </h1>
+      <div class="menu-footer flex-center">
+        <div>FAQ</div>
+        <div>CONTACTS</div>
+        <div>ABOUTUS</div>
+        <div>NEWS</div>
+        <div>BRANDS</div>
+        <div>CARS</div>
+      </div>
+      <div class="footer-item">
+        Lorem ipsum dolor sit.
+        <span>|</span>
+        2019
+      </div>
+      
+    </div>
+  </footer>
+ 
+
+
+
+
+  
+</body>
+</html>
